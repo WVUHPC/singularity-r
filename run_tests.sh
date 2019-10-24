@@ -16,4 +16,4 @@ set -x
 singularity exec R -q -e "stopifnot(getRversion() == '$(version)')"
 
 { set +x; } 2>/dev/null
-echo "All tests passed!"
+echo "R version is found inside image and version matches"

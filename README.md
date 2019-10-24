@@ -1,7 +1,7 @@
 # Singularity R
 
-[![Build Status](https://travis-ci.org/HPCWVU/singularity-r.svg?branch=master)](https://travis-ci.org/nickjer/singularity-r)
-[![Singularity Hub](https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg)](https://singularity-hub.org/collections/462)
+[![Build Status](https://travis-ci.org/WVUHPC/singularity-r.svg?branch=master)](https://travis-ci.org/WVUHPC/singularity-r)
+[![Singularity Hub](https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg)](https://singularity-hub.org/collections/3686)
 [![GitHub License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 Singularity image for [R].
@@ -16,6 +16,8 @@ R is installed from the the repo:
 
 The current version of R is 3.6.1 and images are available from Ubuntu xenial and bionic
 
+These recipes are used by West Virginia University (WVU) for their 
+High Performace Computing (HPC) clusters
 
 ## Build
 
@@ -54,15 +56,16 @@ Example:
 
 ```console
 $ singularity run --app R singularity-r.simg --version
-R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree"
-Copyright (C) 2017 The R Foundation for Statistical Computing
+R version 3.6.1 (2019-07-05) -- "Action of the Toes"
+Copyright (C) 2019 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under the terms of the
 GNU General Public License versions 2 or 3.
 For more information about these matters see
-http://www.gnu.org/licenses/.
+https://www.gnu.org/licenses/.
+
 ```
 
 ### Rscript
@@ -77,13 +80,13 @@ Example:
 
 ```console
 $ singularity run --app Rscript singularity-r.simg --version
-R scripting front-end version 3.4.3 (2017-11-30)
+R scripting front-end version 3.6.1 (2019-07-05)
 ```
 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at
-https://github.com/nickjer/singularity-r.
+https://github.com/WVUHPC/singularity-r.
 
 ## License
 
