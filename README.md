@@ -19,6 +19,10 @@ The current version of R is 3.6.1 and images are available from Ubuntu xenial an
 These recipes are used by West Virginia University (WVU) for their 
 High Performace Computing (HPC) clusters
 
+<https://it.wvu.edu/research/research-computing>
+
+<https://docs.hpc.wvu.edu>
+
 ## Build
 
 You can build a local Singularity image named `singularity-r.simg` with:
