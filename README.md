@@ -1,12 +1,21 @@
 # Singularity R
 
-[![Build Status](https://travis-ci.org/nickjer/singularity-r.svg?branch=master)](https://travis-ci.org/nickjer/singularity-r)
+[![Build Status](https://travis-ci.org/HPCWVU/singularity-r.svg?branch=master)](https://travis-ci.org/nickjer/singularity-r)
 [![Singularity Hub](https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg)](https://singularity-hub.org/collections/462)
 [![GitHub License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 Singularity image for [R].
 
-This is still a work in progress.
+Singularity images for R build from Docker using Official Ubuntu Images
+
+<https://hub.docker.com/_/ubuntu>
+
+R is installed from the the repo:
+
+<https://cran.r-project.org/bin/linux/ubuntu/>
+
+The current version of R is 3.6.1 and images are available from Ubuntu xenial and bionic
+
 
 ## Build
 
@@ -22,7 +31,7 @@ Instead of building it yourself you can download the pre-built image from
 [Singularity Hub](https://www.singularity-hub.org) with:
 
 ```sh
-singularity pull --name singularity-r.simg shub://nickjer/singularity-r
+singularity pull --name singularity-r.simg shub://WVUHPC/singularity-r
 ```
 
 ## Run

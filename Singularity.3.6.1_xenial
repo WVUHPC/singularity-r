@@ -2,8 +2,8 @@ BootStrap: docker
 From: ubuntu:16.04
 
 %labels
-  Maintainer Jeremy Nicklas
-  R_Version 3.6.0
+  Maintainer Guillermo Avendano-Franco
+  R_Version 3.6.1
 
 %apprun R
   exec R "${@}"
@@ -16,7 +16,7 @@ From: ubuntu:16.04
 
 %post
   # Software versions
-  export R_VERSION=3.6.0
+  export R_VERSION=3.6.1
 
   # Get dependencies
   apt-get update
@@ -32,7 +32,7 @@ From: ubuntu:16.04
 
   # Install R
   echo "deb http://cran.r-project.org/bin/linux/ubuntu xenial-cran35/" > /etc/apt/sources.list.d/r.list
-  apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+  apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
   apt-get update
   apt-get install -y --no-install-recommends \
     r-base=${R_VERSION}* \

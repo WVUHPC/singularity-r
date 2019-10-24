@@ -1,8 +1,8 @@
 BootStrap: docker
-From: ubuntu:16.04
+From: ubuntu:18.04
 
 %labels
-  Maintainer Jeremy Nicklas
+  Maintainer Guillermo Avendano-Franco
   R_Version 3.6.1
 
 %apprun R
@@ -21,7 +21,7 @@ From: ubuntu:16.04
   # Get dependencies
   apt-get update
   apt-get install -y --no-install-recommends \
-    locales
+    locales gnupg
 
   # Configure default locale
   echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
@@ -31,8 +31,8 @@ From: ubuntu:16.04
   export LANG=en_US.UTF-8
 
   # Install R
-  echo "deb http://cran.r-project.org/bin/linux/ubuntu xenial-cran35/" > /etc/apt/sources.list.d/r.list
-  apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+  echo "deb http://cran.r-project.org/bin/linux/ubuntu bionic-cran35/" > /etc/apt/sources.list.d/r.list
+  apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
   apt-get update
   apt-get install -y --no-install-recommends \
     r-base=${R_VERSION}* \
