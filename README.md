@@ -14,12 +14,12 @@ R is installed from the the repo:
 
 <https://cran.r-project.org/bin/linux/ubuntu/>
 
-The current version of R is 3.6.1 and images are available from Ubuntu xenial and bionic
+The current version of R is 3.6.1 and images are available using Ubuntu xenial and bionic as base
 
 These recipes are used by West Virginia University (WVU) for their 
 High Performace Computing (HPC) clusters
 
-<https://it.wvu.edu/research/research-computing>
+<https://hpc.wvu.edu>
 
 <https://docs.hpc.wvu.edu>
 
